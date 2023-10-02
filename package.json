@@ -5,6 +5,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "@coreui/vue": "^4.10.1",
     "vitepress": "^1.0.0-rc.20"
   }
 }
