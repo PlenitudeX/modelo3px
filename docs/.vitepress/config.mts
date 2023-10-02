@@ -6,8 +6,10 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '#1' },
-      { text: 'Examples', link: '#2' }
+      { text: 'Inicio', link: '#1' },
+      { text: 'Serviços', link: '#2' },
+      { text: 'Depoimentos', link: '#3' },
+      { text: 'Entre em contato', link: '#4' },
     ],
   }
 })
