@@ -11,6 +11,9 @@
     <section id="4">
         <Contato />
     </section>
+    <section>
+        <Footer />
+    </section>
 </template>
 
 <script setup>
@@ -18,4 +21,5 @@ import Slide from './componentes/Slide.vue'
 import Destaques from './componentes/Destaques.vue'
 import Depoimento from './componentes/Depoimento.vue'
 import Contato from './componentes/Contato.vue'
+import Footer from './componentes/Footer.vue'
 </script>

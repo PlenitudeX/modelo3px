@@ -15,7 +15,7 @@
                 </div>
                 <div class="card-flap flap2">
                     <div class="card-actions">
-                        <a href="#" class="btn">Entre em contato</a>
+                        <a href="#formulario" class="btn">Entre em contato</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="card-flap flap2">
                     <div class="card-actions">
-                        <a href="#" class="btn">Entre em contato</a>
+                        <a href="#formulario" class="btn">Entre em contato</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="card-flap flap2">
                     <div class="card-actions">
-                        <a href="#" class="btn">Entre em contato</a>
+                        <a href="#formulario" class="btn">Entre em contato</a>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="card-flap flap2">
                     <div class="card-actions">
-                        <a href="#" class="btn">Entre em contato</a>
+                        <a href="#formulario" class="btn">Entre em contato</a>
                     </div>
                 </div>
             </div>
