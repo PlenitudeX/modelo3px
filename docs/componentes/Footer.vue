@@ -14,6 +14,14 @@
                         <p>Sábado: 9h - 12h</p>
                         <p>Domingo: Fechado</p>
                     </div>
+                    <div class="socials">
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="../assets/insta.png" alt="Instagram">
+                        </a>
+                        <a href="https://whatsapp.com" target="_blank">
+                            <img src="../assets/whats.png" alt="Whatsapp">
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-bottom">
                     &copy; 2023 Cabeleleira. Feito por <a href="https://www.instagram.com/plenitude_x/">Plenitudex</a>.
@@ -24,8 +32,8 @@
 
 <style>
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ccc;
+    color: #333;
     padding: 20px 0 0;
     text-align: center;
 }
@@ -51,22 +59,47 @@
 }
 
 .footer-bottom {
-    background-color: #222;
+    background-color: #ddd;
     padding: 10px 0;
 }
 
 .footer-bottom a {
-    color: #fff;
+    color: #000;
 }
 
 .footer-bottom a:hover {
-    color: #aaa;
+    color: #555;
+}
+
+.socials {
+    margin-top: 20px;
+
+}
+
+.socials img {
+    width: 2rem;
+    margin: 10px 10px;
 }
 
 @media screen and (max-width: 700px) {
     .footer-content {
         flex-direction: column;
     }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .socials {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .socials img {
+        margin: 0 10px;
+    }
+
 
 }
 

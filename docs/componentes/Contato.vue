@@ -35,7 +35,6 @@ const enviar = () => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #eaeaea;
 }
 
 form {

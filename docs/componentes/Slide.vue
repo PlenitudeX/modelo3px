@@ -44,12 +44,12 @@
 
 @media (max-width: 768px) {
     .banner h2 {
-        top: 8rem;
+        top: 4rem;
         line-height: 1em;
     }
 
     .banner p {
-        top: 17rem;
+        top: 14rem;
     }
 }
 

@@ -53,7 +53,8 @@ const Depoimentos = [
     width: 100%;
     margin: 10px auto;
     font: 15px Tahoma, Georgia, serif;
-    color: #616161;
+    background-color: #efefef;
+    padding: 10px 0px;
 }
 
 #testimonials {
