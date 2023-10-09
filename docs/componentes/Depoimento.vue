@@ -58,7 +58,6 @@ const Depoimentos = [
 }
 
 #testimonials {
-    width: 500px;
     margin: 0 auto;
     font: 15px Tahoma, Georgia, serif;
     color: #616161;

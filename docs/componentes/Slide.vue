@@ -1,8 +1,10 @@
 <template>
     <div class="banner">
         <div class="fundo">
-            <h2>Titulo do Banner</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <h2>Cabeleleira</h2>
+            <p>
+                Venha conhecer nossos serviços, temos os melhores profissionais da região.
+            </p>
         </div>
     </div>
 </template>

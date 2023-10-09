@@ -30,6 +30,14 @@
         </footer>
 </template>
 
+<script setup>
+import temas from "../../color.json"
+
+const cores = temas
+console.log(cores);
+
+</script>
+
 <style>
 .footer {
     background-color: #ccc;
