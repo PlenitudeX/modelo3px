@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div :style="{background: buttonB}" class="footer-bottom">
-                    &copy; 2023 Cabeleleira. Feito por <a @mouseenter="hovered = true" :style="{ color: text }" href="https://www.instagram.com/plenitude_x/">Plenitudex</a>.
+                    &copy; 2023 Cabeleleira. Feito por <a :style="{ color: text }" href="https://www.instagram.com/plenitude_x/">Plenitudex</a>.
                 </div>
             </div>
         </footer>
@@ -32,18 +32,12 @@
 
 <script setup>
 import temas from "../../color.json"
-import { ref } from "vue"
 
 const style = 0;
-console.log(temas[style]);
 
 const background = temas[style].$schema.Footer.background
 const buttonB = temas[style].$schema.Footer.footerButton.background
 const text = temas[style].$schema.Geral.text
-
-const hovered = ref(false)
-
-
 
 </script>
 
