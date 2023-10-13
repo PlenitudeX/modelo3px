@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">
+    <footer :style="{ background: background, color: text }" class="footer">
             <div>
                 <div class="footer-content">
                     <div class="footer-section">
@@ -23,8 +23,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    &copy; 2023 Cabeleleira. Feito por <a href="https://www.instagram.com/plenitude_x/">Plenitudex</a>.
+                <div :style="{background: buttonB}" class="footer-bottom">
+                    &copy; 2023 Cabeleleira. Feito por <a @mouseenter="hovered = true" :style="{ color: text }" href="https://www.instagram.com/plenitude_x/">Plenitudex</a>.
                 </div>
             </div>
         </footer>
@@ -32,15 +32,24 @@
 
 <script setup>
 import temas from "../../color.json"
+import { ref } from "vue"
 
-const cores = temas
-console.log(cores);
+const style = 0;
+console.log(temas[style]);
+
+const background = temas[style].$schema.Footer.background
+const buttonB = temas[style].$schema.Footer.footerButton.background
+const text = temas[style].$schema.Geral.text
+
+const hovered = ref(false)
+
+
 
 </script>
 
 <style>
 .footer {
-    background-color: #ccc;
+    background-color: #E5E5E5;
     color: #333;
     padding: 20px 0 0;
     text-align: center;
@@ -67,13 +76,11 @@ console.log(cores);
 }
 
 .footer-bottom {
-    background-color: #ddd;
-    padding: 10px 0;
+    background-color: #e5e5e5;
+    padding: 10px 5px;
+    text-align: left;
 }
 
-.footer-bottom a {
-    color: #000;
-}
 
 .footer-bottom a:hover {
     color: #555;
@@ -106,6 +113,10 @@ console.log(cores);
 
     .socials img {
         margin: 0 10px;
+    }
+
+    .footer-bottom {
+        text-align: center;
     }
 
 

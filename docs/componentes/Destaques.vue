@@ -66,7 +66,7 @@
                 <h2>Progressiva</h2>
             </div>
             <div class="card-flap flap1">
-                <div class="card-description">
+            /    <div class="card-description">
                     This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when
                     they're not available etc.
                 </div>

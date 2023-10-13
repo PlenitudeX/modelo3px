@@ -1,6 +1,37 @@
 [
     {
-        "$schema-1": {
+        "$schema": {
+            "Banner": {
+                "color": ""
+            },
+            "Services": {
+                "background": "",
+                "color": ""
+            },
+            "Depoimentos": {
+                "background": "",
+                "color": ""
+            },
+            "Contato": {
+                "background": "",
+                "color": ""
+            },
+            "Footer": {
+                "background": "#e5e5e5",
+                "footerButton": {
+                    "background": "#e5e5e5",
+                    "color": "#000",
+                    "colorHover": "#555"
+                }
+            },
+            "Geral": {
+                "title": "#006600",
+                "text": "#333"
+            }
+        }
+    },
+    {
+        "$schema": {
             "Banner": {
                 "color": ""
             },
@@ -27,34 +58,7 @@
         }
     },
     {
-        "$schema-2": {
-            "Banner": {
-                "color": ""
-            },
-            "Services": {
-                "background": "",
-                "color": ""
-            },
-            "Depoimentos": {
-                "background": "",
-                "color": ""
-            },
-            "Contato": {
-                "background": "",
-                "color": ""
-            },
-            "Footer": {
-                "background": "",
-                "color": "",
-                "footer-botton": {
-                    "background": "",
-                    "color": ""
-                }
-            }
-        }
-    },
-    {
-        "$schema-3": {
+        "$schema": {
             "Banner": {
                 "color": ""
             },
