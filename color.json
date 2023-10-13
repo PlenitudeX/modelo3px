@@ -2,19 +2,20 @@
     {
         "$schema": {
             "Banner": {
-                "color": ""
+                "color": "#000"
             },
             "Services": {
-                "background": "",
-                "color": ""
+                "background": "#8cc5404a"
             },
-            "Depoimentos": {
-                "background": "",
-                "color": ""
+            "Testimonials": {
+                "background": "#75a1d02e"
             },
             "Contato": {
-                "background": "",
-                "color": ""
+                "background": "#8CC5404a",
+                "button": {
+                    "background": "#006600",
+                    "color": "#fff"
+                }
             },
             "Footer": {
                 "background": "#e5e5e5",
@@ -24,7 +25,7 @@
                     "colorHover": "#555"
                 }
             },
-            "Geral": {
+            "Text": {
                 "title": "#006600",
                 "text": "#000"
             }
@@ -33,54 +34,32 @@
     {
         "$schema": {
             "Banner": {
-                "color": ""
+                "color": "#000"
             },
             "Services": {
-                "background": "",
-                "color": ""
+                "background": "#A1D490"
             },
-            "Depoimentos": {
-                "background": "",
-                "color": ""
+            "Testimonials": {
+                "background": "#8B4513"
             },
             "Contato": {
-                "background": "",
-                "color": ""
+                "background": "#A1D490",
+                "button": {
+                    "background": "#006400",
+                    "color": "#fff"
+                }
             },
             "Footer": {
-                "background": "",
-                "color": "",
-                "footer-botton": {
-                    "background": "",
-                    "color": ""
+                "background": "#FFFFFF",
+                "footerButton": {
+                    "background": "#FFFFFF",
+                    "color": "#000",
+                    "colorHover": "#555"
                 }
-            }
-        }
-    },
-    {
-        "$schema": {
-            "Banner": {
-                "color": ""
             },
-            "Services": {
-                "background": "",
-                "color": ""
-            },
-            "Depoimentos": {
-                "background": "",
-                "color": ""
-            },
-            "Contato": {
-                "background": "",
-                "color": ""
-            },
-            "Footer": {
-                "background": "",
-                "color": "",
-                "footer-botton": {
-                    "background": "",
-                    "color": ""
-                }
+            "Text": {
+                "title": "#006400",
+                "text": "#000"
             }
         }
     }

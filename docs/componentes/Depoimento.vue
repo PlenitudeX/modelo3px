@@ -1,11 +1,11 @@
 <template>
-    <div class="depoimentos">
-        <h2>Depoimentos</h2>
+    <div :style="{background}" class="depoimentos">
+        <h1 :style="{color: title}">Depoimentos</h1>
         <ul id="testimonials">
             <li v-for="depoimento in Depoimentos">
                 <img :src="depoimento.imagem" width="140" />
-                <h2>{{ depoimento.name }}</h2>
-                <div>
+                <h2 :style="{color: title}">{{ depoimento.name }}</h2>
+                <div :style="{color: text}">
                     <p><span>{{ depoimento.title }}!!</span> {{ depoimento.text }}</p>
                     <div class="stars" v-for="i in depoimento.star">⭐</div>
                 </div>
@@ -15,6 +15,13 @@
 </template>
 
 <script setup>
+import Tema from "../../color.json"
+
+const style = 0;
+
+const background = Tema[style].$schema.Testimonials.background
+const title = Tema[style].$schema.Text?.title
+const text = Tema[style].$schema.Text?.text
 
 const Depoimentos = [
     {
@@ -51,21 +58,20 @@ const Depoimentos = [
 <style>
 .depoimentos {
     width: 100%;
-    margin: 10px auto;
-    font: 15px Tahoma, Georgia, serif;
-    background-color: #efefef;
-    padding: 10px 0px;
+    padding: 10px 0;
+    /* font: 15px Tahoma, Georgia, serif; */
+    /* background-color: #efefef; */
 }
 
 #testimonials {
     margin: 0 auto;
-    font: 15px Tahoma, Georgia, serif;
-    color: #616161;
+    /* font: 15px Tahoma, Georgia, serif; */
+    /* color: #616161; */
 }
 
-#testimonials h2 {
+/* #testimonials h2 {
     font: 26px Georgia, serif;
-}
+} */
 
 #testimonials li {
     border-top: 2px solid rgba(0, 0, 0, 0);
@@ -106,8 +112,8 @@ const Depoimentos = [
 }
 
 #testimonials div span {
-    font: 16px Georgia, serif;
-    color: black;
+    /* font: 16px Georgia, serif; */
+    /* color: black; */
     text-transform: uppercase;
     padding: 0 0 0 2px;
     font-weight: bold;

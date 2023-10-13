@@ -1,6 +1,6 @@
 <template>
-    <div id="formulario">
-        <h2>Entre em contato</h2>
+    <div :style="{background}" id="formulario">
+        <h2 :style="{color: text}">Entre em contato</h2>
         <form :action="enviar">
             <label for="Name">
                 <input type="text" name="Name" id="Name" placeholder="Nome">
@@ -11,12 +11,20 @@
             <label for="Mensagem">
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
             </label>
-            <button @click="enviar" type="button">Enviar</button>
+            <button :style="{background: buttonBackground, color: buttonColor}" @click="enviar" type="button">Enviar</button>
         </form>
     </div>
 </template>
 
 <script setup>
+import Tema from "../../color.json"
+
+const style = 0;
+
+const background = Tema[style].$schema.Contato.background
+const text = Tema[style].$schema.Text.text
+const buttonBackground = Tema[style].$schema.Contato.button.background
+const buttonColor = Tema[style].$schema.Contato.button.color
 
 const enviar = () => {
     const nameValue = Name.value

@@ -1,7 +1,7 @@
 <template>
     <div class="banner">
-        <div class="fundo">
-            <h2>Cabeleleira</h2>
+        <div class="fundo" :style="{color}">
+            <h2 :style="{color: title}">Cabeleleira</h2>
             <p>
                 Venha conhecer nossos serviços, temos os melhores profissionais da região.
             </p>
@@ -10,7 +10,13 @@
 </template>
 
 <script setup lang="ts">
+import Tema from "../../color.json"
 
+const style = 0;
+
+const title = Tema[style].$schema.Text?.title
+
+const color = Tema[style].$schema.Text?.text
 
 </script>
 

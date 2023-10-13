@@ -33,11 +33,11 @@
 <script setup>
 import temas from "../../color.json"
 
-const style = 0;
+const style = 1;
 
 const background = temas[style].$schema.Footer.background
 const buttonB = temas[style].$schema.Footer.footerButton.background
-const text = temas[style].$schema.Geral.text
+const text = temas[style].$schema.Text.text
 
 </script>
 
@@ -70,7 +70,7 @@ const text = temas[style].$schema.Geral.text
 }
 
 .footer-bottom {
-    background-color: #e5e5e5;
+    /* background-color: #e5e5e5; */
     padding: 10px 5px;
     text-align: left;
 }

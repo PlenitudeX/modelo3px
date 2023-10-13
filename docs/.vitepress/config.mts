@@ -11,5 +11,7 @@ export default defineConfig({
       { text: 'Depoimentos', link: '#3' },
       { text: 'Entre em contato', link: '#4' },
     ],
-  }
+  },
 })
+
+
