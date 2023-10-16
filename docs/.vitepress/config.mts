@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Modelo 3",
+  title: "Cabeleleira",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

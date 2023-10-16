@@ -12,14 +12,16 @@
 <script setup lang="ts">
 import Tema from "../../color.json"
 
-const style = 0;
+const props = defineProps<{
+    tema: string
+}>()
+
+const style = props.tema || 0;
 
 const title = Tema[style].$schema.Text?.title
-
 const color = Tema[style].$schema.Text?.text
 
 </script>
-
 
 <style>
 .banner {
@@ -29,7 +31,7 @@ const color = Tema[style].$schema.Text?.text
 }
 
 .banner .fundo {
-    background-color: rgba(183, 183, 183, 0.5);
+    background-color: rgba(223, 223, 223, 0.5);
     height: 100%;
     color: black;
 }

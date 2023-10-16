@@ -14,10 +14,13 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Tema from "../../color.json"
 
-const style = 0;
+const props = defineProps<{
+    tema: string
+}>()
+const style = props.tema || 0;
 
 const background = Tema[style].$schema.Testimonials.background
 const title = Tema[style].$schema.Text?.title

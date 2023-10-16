@@ -30,10 +30,14 @@
         </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import temas from "../../color.json"
 
-const style = 1;
+const props = defineProps<{
+    tema: string
+}>()
+
+const style = props.tema || 0;
 
 const background = temas[style].$schema.Footer.background
 const buttonB = temas[style].$schema.Footer.footerButton.background

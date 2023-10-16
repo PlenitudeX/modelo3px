@@ -1,7 +1,7 @@
 <template>
-    <div :style="{background}" id="formulario">
+    <div class="contato" :style="{background}" >
         <h2 :style="{color: text}">Entre em contato</h2>
-        <form :action="enviar">
+        <form :submit="enviar">
             <label for="Name">
                 <input type="text" name="Name" id="Name" placeholder="Nome">
             </label>
@@ -16,18 +16,27 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Tema from "../../color.json"
+import { ref } from "vue"
 
-const style = 0;
+const props = defineProps<{
+    tema: string
+}>()
+
+const style = props.tema || 0;
 
 const background = Tema[style].$schema.Contato.background
 const text = Tema[style].$schema.Text.text
 const buttonBackground = Tema[style].$schema.Contato.button.background
 const buttonColor = Tema[style].$schema.Contato.button.color
 
+const Name = ref('')
+const email = ref('')
+const mensagem = ref('')
+
 const enviar = () => {
-    const nameValue = Name.value
+    const nameValue = Name.value;
     const emailValue = email.value
     const mensagemValue = mensagem.value
     console.log(nameValue,'-', emailValue,'-', mensagemValue)
@@ -38,11 +47,13 @@ const enviar = () => {
 </script>
 
 <style scoped>
-#formulario {
+
+.contato {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 form {
@@ -87,7 +98,7 @@ button:focus {
 }
 
 h2 {
-    margin: 10px;
+    /* margin: 10px; */
     padding: 10px;
     font-size: 2rem;
     text-align: center;

@@ -37,13 +37,13 @@
                 "color": "#000"
             },
             "Services": {
-                "background": "#A1D490"
+                "background": "#FFD7004d"
             },
             "Testimonials": {
-                "background": "#8B4513"
+                "background": "#97810d14"
             },
             "Contato": {
-                "background": "#A1D490",
+                "background": "#FFD7004d",
                 "button": {
                     "background": "#006400",
                     "color": "#fff"
@@ -58,7 +58,7 @@
                 }
             },
             "Text": {
-                "title": "#006400",
+                "title": "#97810d",
                 "text": "#000"
             }
         }

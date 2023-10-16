@@ -1,18 +1,18 @@
 <template>
     <section id="1">
-        <Slide />
+        <Slide :tema="tema" />
     </section>
     <section id="2">
-        <Destaques />
+        <Destaques :tema="tema" />
     </section>
     <section id="3">
-        <Depoimento />
+        <Depoimento :tema="tema" />
     </section>
     <section id="4">
-        <Contato />
+        <Contato :tema="tema" />
     </section>
     <section>
-        <Footer />
+        <Footer :tema="tema" />
     </section>
 </template>
 
@@ -22,5 +22,7 @@ import Destaques from './componentes/Destaques.vue'
 import Depoimento from './componentes/Depoimento.vue'
 import Contato from './componentes/Contato.vue'
 import Footer from './componentes/Footer.vue'
+
+const tema = window.location.search.slice(-1);
 
 </script>
