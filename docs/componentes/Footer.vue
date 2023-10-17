@@ -3,13 +3,13 @@
             <div>
                 <div class="footer-content">
                     <div class="footer-section">
-                        <h3>Contato</h3>
+                        <h3 :style="{color: title}">Contato</h3>
                         <p>Endereço: Rua dos cabeleleiros, 123</p>
                         <p>Telefone: (11) 1234-5678</p>
                         <p>Email: contato@cabeleleiros.com</p>
                     </div>
                     <div class="footer-section">
-                        <h3>Horário de Funcionamento</h3>
+                        <h3 :style="{color: title}">Horário de Funcionamento</h3>
                         <p>Segunda a Sexta: 8h - 18h</p>
                         <p>Sábado: 9h - 12h</p>
                         <p>Domingo: Fechado</p>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div :style="{background: buttonB}" class="footer-bottom">
-                    &copy; 2023 Cabeleleira. Feito por <a :style="{ color: text }" href="https://www.instagram.com/plenitude_x/">Plenitudex</a>.
+                    &copy; 2023 Cabeleleira. Feito por <a :style="{ color: title }" href="https://www.instagram.com/plenitude_x/">Plenitudex</a>.
                 </div>
             </div>
         </footer>
@@ -39,9 +39,10 @@ const props = defineProps<{
 
 const style = props.tema || 0;
 
-const background = temas[style].$schema.Footer.background
-const buttonB = temas[style].$schema.Footer.footerButton.background
-const text = temas[style].$schema.Text.text
+const background = temas[style].$schema.Footer
+const buttonB = temas[style].$schema.Footer
+const title = temas[style].$schema.Primary
+const text = temas[style].$schema.Text
 
 </script>
 

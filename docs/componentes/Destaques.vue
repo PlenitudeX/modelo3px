@@ -92,9 +92,10 @@ const props = defineProps<{
 
 const style = props.tema || 0;
 
-const background = Tema[style].$schema.Services.background
-const title = Tema[style].$schema.Text?.title
-const text = Tema[style].$schema.Text?.text
+const background = Tema[style].$schema.Body
+const title = Tema[style].$schema.Text
+const text = Tema[style].$schema.Text
+
 </script>
 
 <style>

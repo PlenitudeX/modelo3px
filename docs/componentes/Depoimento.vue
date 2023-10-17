@@ -22,9 +22,9 @@ const props = defineProps<{
 }>()
 const style = props.tema || 0;
 
-const background = Tema[style].$schema.Testimonials.background
-const title = Tema[style].$schema.Text?.title
-const text = Tema[style].$schema.Text?.text
+const background = Tema[style].$schema.White
+const title = Tema[style].$schema.Primary
+const text = Tema[style].$schema.Text
 
 const Depoimentos = [
     {

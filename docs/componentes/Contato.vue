@@ -26,10 +26,11 @@ const props = defineProps<{
 
 const style = props.tema || 0;
 
-const background = Tema[style].$schema.Contato.background
-const text = Tema[style].$schema.Text.text
-const buttonBackground = Tema[style].$schema.Contato.button.background
-const buttonColor = Tema[style].$schema.Contato.button.color
+
+const background = Tema[style].$schema.Body
+const text = Tema[style].$schema.Text
+const buttonBackground = Tema[style].$schema.Secondary
+const buttonColor = Tema[style].$schema.White
 
 const Name = ref('')
 const email = ref('')

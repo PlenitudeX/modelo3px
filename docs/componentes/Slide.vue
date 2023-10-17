@@ -18,8 +18,8 @@ const props = defineProps<{
 
 const style = props.tema || 0;
 
-const title = Tema[style].$schema.Text?.title
-const color = Tema[style].$schema.Text?.text
+const title = Tema[style].$schema.Primary
+const color = Tema[style].$schema.Text
 
 </script>
 

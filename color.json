@@ -1,66 +1,22 @@
 [
     {
         "$schema": {
-            "Banner": {
-                "color": "#000"
-            },
-            "Services": {
-                "background": "#8cc5404a"
-            },
-            "Testimonials": {
-                "background": "#75a1d02e"
-            },
-            "Contato": {
-                "background": "#8CC5404a",
-                "button": {
-                    "background": "#006600",
-                    "color": "#fff"
-                }
-            },
-            "Footer": {
-                "background": "#e5e5e5",
-                "footerButton": {
-                    "background": "#e5e5e5",
-                    "color": "#000",
-                    "colorHover": "#555"
-                }
-            },
-            "Text": {
-                "title": "#006600",
-                "text": "#000"
-            }
+            "Primary": "#006600",
+            "Secondary": "#97810d",
+            "Body": "#97810d14",
+            "Text": "#000",
+            "White": "#fff",
+            "Footer": "#e5e5e5"
         }
     },
     {
         "$schema": {
-            "Banner": {
-                "color": "#000"
-            },
-            "Services": {
-                "background": "#FFD7004d"
-            },
-            "Testimonials": {
-                "background": "#97810d14"
-            },
-            "Contato": {
-                "background": "#FFD7004d",
-                "button": {
-                    "background": "#006400",
-                    "color": "#fff"
-                }
-            },
-            "Footer": {
-                "background": "#FFFFFF",
-                "footerButton": {
-                    "background": "#FFFFFF",
-                    "color": "#000",
-                    "colorHover": "#555"
-                }
-            },
-            "Text": {
-                "title": "#97810d",
-                "text": "#000"
-            }
+            "Primary": "#97810d",
+            "Secondary": "#97810d",
+            "Body": "#FFD7004d",
+            "Text": "#000",
+            "White": "#fff",
+            "Footer": "#fff"
         }
     }
 ]
