@@ -3,7 +3,7 @@
         "$schema": {
             "Primary": "#006600",
             "Secondary": "#97810d",
-            "Body": "#97810d14",
+            "Body": "#97810d1a",
             "Text": "#000",
             "White": "#fff",
             "Footer": "#e5e5e5"

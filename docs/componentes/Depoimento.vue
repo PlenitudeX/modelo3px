@@ -62,19 +62,12 @@ const Depoimentos = [
 .depoimentos {
     width: 100%;
     padding: 10px 0;
-    /* font: 15px Tahoma, Georgia, serif; */
-    /* background-color: #efefef; */
 }
 
 #testimonials {
     margin: 0 auto;
-    /* font: 15px Tahoma, Georgia, serif; */
-    /* color: #616161; */
 }
 
-/* #testimonials h2 {
-    font: 26px Georgia, serif;
-} */
 
 #testimonials li {
     border-top: 2px solid rgba(0, 0, 0, 0);

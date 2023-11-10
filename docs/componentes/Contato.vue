@@ -86,20 +86,7 @@ button {
     background-color: white;
 }
 
-button:hover {
-    background-color: #ccc;
-}
-
-button:active {
-    background-color: #aaa;
-}
-
-button:focus {
-    outline: none;
-}
-
 h2 {
-    /* margin: 10px; */
     padding: 10px;
     font-size: 2rem;
     text-align: center;

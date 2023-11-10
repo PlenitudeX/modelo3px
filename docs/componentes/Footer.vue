@@ -15,10 +15,10 @@
                         <p>Domingo: Fechado</p>
                     </div>
                     <div class="socials">
-                        <a href="https://instagram.com" target="_blank">
+                        <a href="/" target="_blank">
                             <img src="../assets/insta.png" alt="Instagram">
                         </a>
-                        <a href="https://whatsapp.com" target="_blank">
+                        <a href="/" target="_blank">
                             <img src="../assets/whats.png" alt="Whatsapp">
                         </a>
                     </div>

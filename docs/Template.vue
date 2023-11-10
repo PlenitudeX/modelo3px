@@ -1,6 +1,6 @@
 <template>
     <section id="1">
-        <Slide :tema="tema" />
+        <Banner :tema="tema" />
     </section>
     <section id="2">
         <Destaques :tema="tema" />
@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import Slide from './componentes/Slide.vue'
+import Banner from './componentes/Banner.vue'
 import Destaques from './componentes/Destaques.vue'
 import Depoimento from './componentes/Depoimento.vue'
 import Contato from './componentes/Contato.vue'
