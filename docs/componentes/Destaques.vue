@@ -1,77 +1,17 @@
 <template>
     <div :style="{background}">
         <h1 :style="{color: text}">Serviços em destaques</h1>
-        <div class="cards">
+        <div class="cards" v-for="(servico, index) in servicos" :key="index">
             <div class="card">
                 <div class="card__image-holder">
-                    <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+                    <img class="card_image" :src="servico.image" alt="wave">
                 </div>
                 <div class="card-title">
-                    <h2 :style="{color: title}">Corte de cabelo</h2>
+                    <h2 :style="{color:title}">{{servico.title}}</h2>
                 </div>
-                <div class="card-flap flap1">
-                    <div :style="{color: text}" class="card-description">
-                        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when
-                        they're not available etc.
-                    </div>
-                    <div class="card-flap flap2">
-                        <div class="card-actions">
-                            <a href="/" class="btn">Entre em contato</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
-                </div>
-                <div class="card-title">
-                    <h2 :style="{color: title}">Alisamento</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div :style="{color: text}" class="card-description">
-                        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when
-                        they're not available etc.
-                    </div>
-                    <div class="card-flap flap2">
-                        <div class="card-actions">
-                            <a href="/" class="btn">Entre em contato</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
-                </div>
-                <div class="card-title">
-                    <h2 :style="{color: title}">Escova</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div :style="{color: text}" class="card-description">
-                        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when
-                        they're not available etc.
-                    </div>
-                    <div class="card-flap flap2">
-                        <div class="card-actions">
-                            <a href="/" class="btn">Entre em contato</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
-                </div>
-                <div class="card-title">
-                    <h2 :style="{color: title}">Progressiva</h2>
-                </div>
-                <div class="card-flap flap1">
-                   <div :style="{color: text}" class="card-description">
-                        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when
-                        they're not available etc.
-                    </div>
-                    <div class="card-flap flap2">
+                <div class="card-flap">
+                    <div :style="{color: text}" class="card-description">{{ servico.description }}</div>
+                    <div class="flap2">
                         <div class="card-actions">
                             <a href="/" class="btn">Entre em contato</a>
                         </div>
@@ -83,6 +23,7 @@
 </template>
 
 <script setup lang="ts">
+import { defineProps, ref } from "vue"
 import Tema from "../../color.json"
 
 const props = defineProps<{
@@ -95,6 +36,29 @@ const style = props.tema || 0;
 const background = Tema[style].$schema.Body
 const title = Tema[style].$schema.Text
 const text = Tema[style].$schema.Text
+
+const servicos = ref([
+    {
+        title: "Corte de cabelo",
+        image: "https://source.unsplash.com/300x225/?wave",
+        description: "Corte de cabelo excepcional para mulheres, realçando sua beleza única. Agende hoje para uma transformação elegante!"
+    },
+    {
+        title: "Alisamento",
+        image: "https://source.unsplash.com/300x225/?wave",
+        description: "Transforme seus cabelos com nosso alisamento profissional para um look elegante e impecável."
+    },
+    {
+        title: "Escova",
+        image: "https://source.unsplash.com/300x225/?wave",
+        description: "Cabelos impecáveis com nossa escova profissional. Sinta-se linda em minutos!"
+    },
+    {
+        title: "Progressiva",
+        image: "https://source.unsplash.com/300x225/?wave",
+        description: "Mude o visual com seus fios com nossa progressiva: cabelos lisos, brilhantes e livres de frizz em apenas uma visita!"
+    }
+])
 
 </script>
 
@@ -157,5 +121,9 @@ h2 {
 
 .card:hover {
     transform: scale(1.05);
+}
+
+.flap2 {
+    padding: 8px 0px;
 }
 </style>

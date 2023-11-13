@@ -4,7 +4,7 @@
         <ul id="testimonials">
             <li v-for="depoimento in Depoimentos">
                 <img :src="depoimento.imagem" width="140" />
-                <h2 :style="{color: title}">{{ depoimento.name }}</h2>
+                <h2 :style="{color: name}">{{ depoimento.name }}</h2>
                 <div :style="{color: text}">
                     <p><span>{{ depoimento.title }}!!</span> {{ depoimento.text }}</p>
                     <div class="stars" v-for="i in depoimento.star">⭐</div>
@@ -25,33 +25,34 @@ const style = props.tema || 0;
 const background = Tema[style].$schema.White
 const title = Tema[style].$schema.Primary
 const text = Tema[style].$schema.Text
+const name = Tema[style].$schema.Secondary
 
 const Depoimentos = [
     {
         name: 'Evan You',
         title: 'Muito legal',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.',
+        text: 'Meu cabelo nunca esteve tão incrível! O salão realmente entende do que faz.',
         star: 5,
         imagem: 'https://picsum.photos/2000/1000'
     },
     {
         name: 'Joseph Smith',
         title: 'Adorei o atendimento',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.',
+        text: 'Excelente atendimento e profissionais talentosos. Sempre saio satisfeita!',
         star: 5,
         imagem: 'https://picsum.photos/2000/1000'
     },
     {
         name: 'John Doe',
         title: 'Muito bom',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.',
+        text: 'Fiquei apaixonada pelo meu novo corte. Obrigada, salão, por me transformar!',
         star: 4,
         imagem: 'https://picsum.photos/2000/1000'
     },
     {
         name: 'Jane Doe',
         title: 'Muito bom',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.',
+        text: 'A coloração que recebi aqui é impecável. Recomendo a todos!',
         star: 4,
         imagem: 'https://picsum.photos/2000/1000'
     }
